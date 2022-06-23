@@ -3,6 +3,8 @@ server:
   port: 8070
 
 spring:
+  application:
+    name: spring-common
   datasource:
 #    driver-class-name: org.h2.Driver
     driver-class-name: com.mysql.jdbc.Driver

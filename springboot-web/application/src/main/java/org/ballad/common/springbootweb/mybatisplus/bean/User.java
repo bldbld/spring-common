@@ -1,4 +1,4 @@
-package org.ballad.common.springbootweb.sample.mybatisplus.bean;
+package org.ballad.common.springbootweb.mybatisplus.bean;
 
 import lombok.Data;
 

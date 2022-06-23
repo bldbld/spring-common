@@ -1,8 +1,8 @@
 package org.ballad.common.springbootweb.sample.mybatisplus.sample;
 
-import org.ballad.common.springbootweb.application.StartApplication;
-import org.ballad.common.springbootweb.sample.mybatisplus.bean.User;
-import org.ballad.common.springbootweb.sample.mybatisplus.mapper.UserMapper;
+import org.ballad.common.springbootweb.StartApplication;
+import org.ballad.common.springbootweb.mybatisplus.bean.User;
+import org.ballad.common.springbootweb.mybatisplus.mapper.UserMapper;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
