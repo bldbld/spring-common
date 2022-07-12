@@ -22,6 +22,12 @@ public class Log {
     private String applicationName; // 调用的服务名
 
     private LocalDateTime createTime; //操作时间
+
+    /**
+     * 客户端IP
+     */
+    private String clientIp;
+
 }
 
 

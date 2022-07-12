@@ -1,4 +1,7 @@
 package org.ballad.common.springbootweb.mybatisplus.mapper;
 
-public interface LogMapper {
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.ballad.common.springbootweb.mybatisplus.bean.Log;
+
+public interface LogMapper extends BaseMapper<Log> {
 }
