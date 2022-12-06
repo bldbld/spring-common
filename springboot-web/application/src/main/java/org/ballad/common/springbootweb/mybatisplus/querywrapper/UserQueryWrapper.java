@@ -5,16 +5,20 @@ import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.Constants;
 import com.baomidou.mybatisplus.core.toolkit.StringUtils;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 import org.ballad.common.springbootweb.mybatisplus.bean.User;
 import org.ballad.common.springbootweb.mybatisplus.mapper.UserMapper;
+import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
 /**
  * 用户信息查询封装类
  */
+@Component
 public class UserQueryWrapper {
 
     /**
@@ -33,17 +37,7 @@ public class UserQueryWrapper {
         return list;
     }
 
-    /**
-     * 使用自定义SQL进行查询
-     *
-     * @TODO 未完成
-     *
-     * @return
-     */
-    @Select("select count(*) from user;")
-    public List<Object> getListCountByName(@Param(Constants.WRAPPER)Wrapper wrapper){
-        return null;
-    }
+
 
 
 }

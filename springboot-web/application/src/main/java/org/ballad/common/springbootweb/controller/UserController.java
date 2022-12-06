@@ -37,6 +37,12 @@ public class UserController {
         return "User:AAA";
     }
 
+    @AuditLog(logInfo = "查询总数")
+    @PostMapping("getcount")
+    public String getCount(){
+        return String.valueOf(userMapper.getCount());
+    }
+
     @AuditLog(logInfo = "'查询用户:'+ #user.name")
     @PostMapping("getuserbynamelike")
     public String getUserListByNameLike(@RequestBody String name){
